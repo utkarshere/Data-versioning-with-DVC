@@ -1,3 +1,10 @@
 1. Create a git repo and clone it in local.
 2. Create a simple script file called code.py which creates a csv file and stores it to a new 'data' folder in the root directory.
 3. Do a git add commit push before initializing the DVC.
+#pip install DVC
+4. Now we do "dvc init" (creates .dvcignore, .dvc)
+5. Add dummy directory 'S3' through "mkdir S3"
+6. Do "dvc remote add -d myremote S3"
+7. Next "dvc add data/" (will ask you to untrack from git so remove it to let DVC track it.)
+8. Again do "dvc add data/" (creates data.dvc) then "git add .gitignore data.dvc"
+

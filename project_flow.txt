@@ -1,0 +1,3 @@
+1. Create a git repo and clone it in local.
+2. Create a simple script file called code.py which creates a csv file and stores it to a new 'data' folder in the root directory.
+3. Do a git add commit push before initializing the DVC.

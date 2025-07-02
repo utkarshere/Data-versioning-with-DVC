@@ -9,11 +9,14 @@ data = {'Name' : ['Alice', 'Bob', 'Charlie'],
 
 df = pd.DataFrame(data)
 
-#Adding a new row to the dataframe
+#Adding a new row to the V2 version
 new_row_loc = {'Name': 'David', 'Age': 28, 'City': 'San Francisco'}
 df.loc[len(df.index)] = new_row_loc
 
-data_dir = 'data'
+#Adding another new row to the V3 version
+new_row_loc_2 = {'Name': 'Eve', 'Age': 22, 'City': 'Miami'}
+df.loc[len(df.index)] = new_row_loc_2
+data_dir = 'data'       
 
 os.makedirs(data_dir, exist_ok=True)
 
